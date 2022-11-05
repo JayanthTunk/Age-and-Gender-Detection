@@ -38,11 +38,16 @@
   <li>gender.caffemodel</li>
   <li>gender.prototxt</li>
   <li>Age_detection.py</li>
+  <li>Wait.jpeg</li>
  </ul>
  
  
   <p>For face detection, we have a .pb file- this is a protobuf file (protocol buffer); it holds the graph definition and the trained weights of the model. We can use this to run the trained model. And while a .pb file holds the protobuf in binary format, one with the .pbtxt extension holds it in text format. These are TensorFlow files. For age and gender, the .prototxt files describe the network configuration and the .caffemodel file defines the internal states of the parameters of the layers.</p>
 
+
+ <h2>Waiting Window: </h2>
+  <p>This windows is just for visual presentation and it buys you time to set yourself</p>
+  <img src= "Wait.jpeg">
  <h2>Usage :</h2>
  <ul>
   <li>Download my Repository</li>
@@ -65,4 +70,4 @@
     Gender: Male
     Age: 17-22 years
     
-<img src= >
+<img src= "Output/Screenshot from 2022-10-08 23-14-33.png">
