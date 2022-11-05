@@ -1,9 +1,39 @@
+from tkinter import *
+import tkinter as tk
+from PIL import Image,ImageTk
 import cv2
 import argparse
 import time
 import math
 import numpy as np
 import matplotlib.pyplot as plt
+
+splash_root = Tk()
+splash_root.title("Color Recognition")
+splash_root.geometry("1280x720")
+
+upload= Image.open("Wait.jpeg")
+image=ImageTk.PhotoImage(upload)
+label= Label(splash_root,image=image,height = 0, width =0)
+label.place(x=0,y=0)
+
+
+#splash_label = Label(splash_root,text="Wait if you are not a robot",font=30)
+#splash_label.pack()
+
+
+def mainWin():
+   splash_root.destroy()
+  # win= Tk()
+   #win.title("Main Window")
+  # win.geometry("700x200")
+  # win_label= Label(win, text= "Close to st", font= ('Helvetica', 25), fg= "red").pack(pady=20)
+
+#Splash Window Timer
+
+splash_root.after(7000, mainWin)
+
+mainloop()
 
 def FaceBox(net, frame,conf_threshold = 0.75):
     FD = frame.copy()
