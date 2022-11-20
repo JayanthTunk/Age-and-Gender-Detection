@@ -63,7 +63,7 @@
   <li>Press <b>Ctrl + C</b> to stop the program execution.</li>
 </ul>
 
-<h2>Examples :</h2>
+<h2>Example :</h2>
 
     >python3  Age_detection.py
     Gender: Male
