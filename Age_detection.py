@@ -60,14 +60,14 @@ def FaceBox(net, frame,conf_threshold = 0.75):
     return FD , bboxes
 
 
-GP = "/home/jay/Documents/AGE DETECTION/gender.prototxt"
-GM = "/home/jay/Documents/AGE DETECTION/gender.caffemodel"
+GP = "gender.prototxt"
+GM = "gender.caffemodel"
 
-FP = "/home/jay/Documents/AGE DETECTION/face_detector.pbtxt"
-FM = "/home/jay/Documents/AGE DETECTION/face_detector.pb"
+FP = "face_detector.pbtxt"
+FM = "face_detector.pb"
 
-AP = "/home/jay/Documents/AGE DETECTION/age.prototxt"
-AM = "/home/jay/Documents/AGE DETECTION/age.caffemodel"
+AP = "age.prototxt"
+AM = "age.caffemodel"
 
 AN = cv2.dnn.readNet(AM,AP)
 GN = cv2.dnn.readNet(GM, GP)
