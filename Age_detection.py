@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 splash_root = Tk()
-splash_root.title("Color Recognition")
+splash_root.title("Wait for a few sec (adjust your camera) ")
 splash_root.geometry("1280x720")
 
 upload= Image.open("Wait.jpeg")
